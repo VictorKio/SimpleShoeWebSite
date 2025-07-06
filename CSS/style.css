@@ -1,0 +1,353 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 200vh;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+  box-shadow: 0 2px rgba(0, 0, 0, .1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#hamburger{
+  font-size: 1.5rem;
+  position: absolute;
+  right: 40px;
+  transition: 300ms all ease;
+  background: none;
+  display: none;
+}
+
+
+
+.changeNavBgColor{
+  background: green;
+  color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span{
+  font-size: 3rem;
+}
+
+.logo h2{
+  color: green;
+}
+
+.primary-links{
+  display: flex;
+  gap: 40px;
+}
+
+.secondary-links{
+  display: flex;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.primary-show{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: absolute;
+  right: 5px;
+  top: 80px;
+  background: rgba(0, 0, 0, .1);
+  width: 40%;
+  height: 50vh;
+
+  a{
+    color: green;
+    text-decoration: none;
+    padding: 20px 10px 10px;
+    display: inline-block;
+    width: 100%;
+  }
+
+}
+.primary-show a:hover{
+  background: green;
+  color: white;
+}
+
+.primary-links a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #777;
+  padding: 0 0 3px 0;
+  border-bottom: 1px transparent solid;
+  transition: 400ms all ease;
+}
+
+.primary-links a:hover{
+  color: black;
+  border-bottom: 1px black solid;
+}
+
+ul.secondary-links{
+  gap: 2px;
+}
+
+.secondary-links a{
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px;
+  transition: 400ms all ease;
+}
+
+.register{
+  background: #444;
+}
+
+.register:hover{
+  background: black;
+}
+
+.sign-in{
+  background: seagreen;
+}
+
+.sign-in:hover{
+  background: green;
+}
+
+/* ======== END OF NAVBAR ========= */
+
+
+.hero{
+  display: flex;
+  justify-content: center;
+  padding: 40px 50px;
+  align-items: center;
+}
+
+.main-text{
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: #444;
+}
+
+.main-text span{
+  color: green  ;
+}
+
+.sub-text{
+  color: #777;
+  font-size: 1.3rem;
+}
+
+.image{
+  
+}
+
+.image img{
+  width: 800px;
+}
+
+/* ====== END OF HERO ======= */
+.shoe-catalog{
+ margin-top: 2rem;
+}
+
+.shoe-catalog h2{
+  text-align: center;
+  font-size: 3rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.catalog{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.shoe{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .1), -1px -1px 2px rgba(0, 0, 0, .1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 400ms all ease;
+}
+
+.shoe:hover{
+  box-shadow: none;
+}
+
+.shoe img{
+  width: 400px;
+}
+
+.price{
+  display: flex;
+  padding: 5px;
+}
+
+.old-price{
+  text-decoration: line-through;
+  color: red;
+  font-size: 12px;
+}
+
+.new-price{
+  color: green;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.name-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4.name{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.shoe .btn{
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 15px;
+  background: green;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 200ms all ease;
+}
+
+.shoe .btn:hover{
+  background: rgb(2, 150, 2);
+}
+/* ==== END OF HERO SECTION ==== */
+
+footer{
+  background: green;
+  position: relative;
+  bottom: 0;
+  margin-top: 2rem;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 30px;
+}
+
+.footer3{
+  grid-column: 1 / 4;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.233);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer1{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  
+}
+
+
+@media (max-width: 550px){
+
+  #hamburger{
+    display: block;
+    color: black;
+    background: none;
+  }
+
+  #hamburger:focus{
+    background: inherit;
+  }
+
+  .primary-links{
+    display: none;
+  }
+
+  .secondary-links{
+    display: none;
+  }
+
+  .hero{
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .main-text{
+    font-size: 2rem;
+  }
+
+  .image img{
+    width: 300px;
+  }
+
+  .shoe-catalog{
+    overflow-x: hidden;
+  }
+
+  .shoe-catalog h2{
+    font-size: 2rem;
+  }
+
+  .catalog{
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+  }
+
+  .shoe{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shoe .btn{
+    width: 70%;
+  }
+
+  .name-button{
+    gap: 20px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+}
